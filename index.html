@@ -190,6 +190,109 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-mac下-Github添加SSH-keys" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/08/16/mac%E4%B8%8B-Github%E6%B7%BB%E5%8A%A0SSH-keys/">mac下 Github添加SSH keys</a>
+    </h1>
+  
+
+        
+        <a href="/2021/08/16/mac%E4%B8%8B-Github%E6%B7%BB%E5%8A%A0SSH-keys/" class="archive-article-date">
+  	<time datetime="2021-08-16T14:17:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-08-16</time>
+</a>
+
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>注：封面背景在文章最后面。</p>
+<h2 id="一、首先测试下是否有原先有添加过公钥"><a href="#一、首先测试下是否有原先有添加过公钥" class="headerlink" title="一、首先测试下是否有原先有添加过公钥"></a>一、首先测试下是否有原先有添加过公钥</h2><p>我们用下面的代码在终端去测试下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/5071fdab2b8b40b59d2da538dcefca61.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>如上，如果显示，==Permission denied(publickey)==  这就表示缺少公钥。</p>
+<p><img src="https://img-blog.csdnimg.cn/7a1f4c19940b4d20b37c35908fa8b752.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>如上，如果显示 ==You’ve successfully authenticated== 这就表明公钥添加成功了。</p>
+<h2 id="二、进入正题，没有SSH-keys-公钥，请看下方详细mac下-Github添加SSH-keys步骤"><a href="#二、进入正题，没有SSH-keys-公钥，请看下方详细mac下-Github添加SSH-keys步骤" class="headerlink" title="二、进入正题，没有SSH keys 公钥，请看下方详细mac下 Github添加SSH keys步骤:"></a>二、进入正题，没有SSH keys 公钥，请看下方详细<code>mac下 Github添加SSH keys</code>步骤:</h2><h3 id="1-在本地创建SSH-keys"><a href="#1-在本地创建SSH-keys" class="headerlink" title="1.在本地创建SSH keys"></a>1.在本地创建SSH keys</h3><p>打开终端，输入代码：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"xxx@xx.com"</span></span><br><span class="line"><span class="comment">#  “”里面替换成你的GitHub账户登陆邮箱</span></span><br></pre></td></tr></table></figure>
+<p>接着出面下面文字提示：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Last login: Tue Oct <span class="number">31</span> <span class="number">10</span>:<span class="number">20</span>:<span class="number">24</span> on ttys004</span><br><span class="line">bogon:~ YYKit$ ssh-keygen -t rsa -C <span class="string">"xxx@xxx.com"</span></span><br><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file <span class="keyword">in</span> which to save the key (/Users/xx/.ssh/id_rsa):</span><br></pre></td></tr></table></figure>
+<p>不用管它，直接回车，中间会让输入两次密码，什么都不输入，继续回车，会出现如下内容：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">Last login: Tue Oct <span class="number">31</span> <span class="number">10</span>:<span class="number">20</span>:<span class="number">24</span> on ttys004</span><br><span class="line">bogon:~ YYKit$ ssh-keygen -t rsa -C <span class="string">"xxxx@xxx.com"</span></span><br><span class="line">Generating public/private rsa key pair.</span><br><span class="line">Enter file <span class="keyword">in</span> which to save the key (/Users/xx/.ssh/id_rsa): </span><br><span class="line">/Users/xx/.ssh/id_rsa already exists.</span><br><span class="line">Overwrite (y/n)? y</span><br><span class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase): </span><br><span class="line">Enter same passphrase again: </span><br><span class="line">Your identification has been saved <span class="keyword">in</span> /Users/xx/.ssh/id_rsa.</span><br><span class="line">Your public key has been saved <span class="keyword">in</span> /Users/xx/.ssh/id_rsa.pub.</span><br><span class="line">The key fingerprint <span class="keyword">is</span>:</span><br><span class="line">SHA256:rp+<span class="number">6</span>MLo27uTIONMqlO6/E9d9CvJzvVt5QI9I6Z2vy14 <span class="number">468466882</span>@qq.com</span><br><span class="line">The key<span class="string">'s randomart image is:</span></span><br><span class="line"><span class="string">+---[RSA 2048]----+</span></span><br><span class="line"><span class="string">|                 |</span></span><br><span class="line"><span class="string">|            .    |</span></span><br><span class="line"><span class="string">|           o .   |</span></span><br><span class="line"><span class="string">|          o + +  |</span></span><br><span class="line"><span class="string">|  .   . S  o = . |</span></span><br><span class="line"><span class="string">| o . o + . .  +  |</span></span><br><span class="line"><span class="string">|o.. = o o +  o E |</span></span><br><span class="line"><span class="string">|*=+o o + + .o +  |</span></span><br><span class="line"><span class="string">|*XB=o ++=  o+=.  |</span></span><br><span class="line"><span class="string">+----[SHA256]-----+</span></span><br><span class="line"><span class="string">bogon:~ YYKit$</span></span><br></pre></td></tr></table></figure>
+<h3 id="2-复制创建好的SSH-keys到GitHub上"><a href="#2-复制创建好的SSH-keys到GitHub上" class="headerlink" title="2.复制创建好的SSH keys到GitHub上"></a>2.复制创建好的SSH keys到GitHub上</h3><p>这时候，==SSH keys==就创建完了，然后我们需要前往文件夹复制/Users/xxx/.ssh/id_rsa.pub地址下文件==id_rsa.pub==里面的==key==了，</p>
+<p><code>打开id_rsa.pub,复制&quot;xxx@xx.com&quot;之前的部分。</code></p>
+<p>复制完，这时候，来到Github，在你的个人账户中，<br>按照顺序依次点击<br>“Settings –&gt; SSH and GPG keys –&gt; SSH keys –&gt; New SSH Key”,<br>Title可以写自己喜欢的标记，<br>在Key下面粘贴之前复制的内容,然后点击Add SSH Key，<br>这就就添加成功了。</p>
+<h3 id="3-最后测试是否添加成功SSH-keys"><a href="#3-最后测试是否添加成功SSH-keys" class="headerlink" title="3.最后测试是否添加成功SSH keys"></a>3.最后测试是否添加成功SSH keys</h3><p>我们再次测试下公钥有没有添加成功：<br>在终端中，输入代码如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<p><img src="https://img-blog.csdnimg.cn/7a1f4c19940b4d20b37c35908fa8b752.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>如上，如果显示 ==You’ve successfully authenticated== 这就表明公钥添加成功了。</p>
+<h1 id="终"><a href="#终" class="headerlink" title="终"></a>终</h1><p><img src="https://img-blog.csdnimg.cn/2d626140025744e4849ec1a16271572c.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+
+      
+
+      
+    </div>
+<!-- 添加本文结束标记-->
+
+<!-- 添加完成 -->
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">mac</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">github</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">sshkeys</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/08/16/mac%E4%B8%8B-Github%E6%B7%BB%E5%8A%A0SSH-keys/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-mac下启动jupyter-notebook" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -940,94 +1043,9 @@
 
 
   
-    <article id="post-Java代码编写提升（1）不要在常量和变量中出现易混淆的字母" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/06/24/Java%E4%BB%A3%E7%A0%81%E7%BC%96%E5%86%99%E6%8F%90%E5%8D%87%EF%BC%881%EF%BC%89%E4%B8%8D%E8%A6%81%E5%9C%A8%E5%B8%B8%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F%E4%B8%AD%E5%87%BA%E7%8E%B0%E6%98%93%E6%B7%B7%E6%B7%86%E7%9A%84%E5%AD%97%E6%AF%8D/">Java代码编写提升（1）不要在常量和变量中出现易混淆的字母</a>
-    </h1>
-  
-
-        
-        <a href="/2020/06/24/Java%E4%BB%A3%E7%A0%81%E7%BC%96%E5%86%99%E6%8F%90%E5%8D%87%EF%BC%881%EF%BC%89%E4%B8%8D%E8%A6%81%E5%9C%A8%E5%B8%B8%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F%E4%B8%AD%E5%87%BA%E7%8E%B0%E6%98%93%E6%B7%B7%E6%B7%86%E7%9A%84%E5%AD%97%E6%AF%8D/" class="archive-article-date">
-  	<time datetime="2020-06-24T10:17:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-24</time>
-</a>
-
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><img src="https://images5.alphacoders.com/108/1081273.jpg" alt=""></p>
-<p>包名全小写，类名首字母全大写，常量全部大写并用下划线分割，变量采用驼峰命名法（camelCase）命名等，这些都是最基本的Java编码规范，是每个Javaer都应熟知的规则，但是在变量的声明中要注意不要引入容易混淆的字母。</p>
-        
-          <a class="article-more-a" href="/2020/06/24/Java%E4%BB%A3%E7%A0%81%E7%BC%96%E5%86%99%E6%8F%90%E5%8D%87%EF%BC%881%EF%BC%89%E4%B8%8D%E8%A6%81%E5%9C%A8%E5%B8%B8%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F%E4%B8%AD%E5%87%BA%E7%8E%B0%E6%98%93%E6%B7%B7%E6%B7%86%E7%9A%84%E5%AD%97%E6%AF%8D/#more">more >></a>
-        
-      
-
-      
-    </div>
-<!-- 添加本文结束标记-->
-
-<!-- 添加完成 -->
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">JavaPro</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/06/24/Java%E4%BB%A3%E7%A0%81%E7%BC%96%E5%86%99%E6%8F%90%E5%8D%87%EF%BC%881%EF%BC%89%E4%B8%8D%E8%A6%81%E5%9C%A8%E5%B8%B8%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F%E4%B8%AD%E5%87%BA%E7%8E%B0%E6%98%93%E6%B7%B7%E6%B7%86%E7%9A%84%E5%AD%97%E6%AF%8D/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
     </nav>
   
 
@@ -1342,6 +1360,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">github</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">sshkeys</a>
               </li>
             
             <div class="clearfix"></div>
