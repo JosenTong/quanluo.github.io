@@ -8,19 +8,19 @@
   <link rel="dns-prefetch" href="http://quanluo.github.io">
   <title>mac下 Github添加SSH keys | Quanluo&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="注：封面背景在文章最后面。 一、首先测试下是否有原先有添加过公钥我们用下面的代码在终端去测试下： 1ssh -T git@github.com 如上，如果显示，&#x3D;&#x3D;Permission denied(publickey)&#x3D;&#x3D;  这就表示缺少公钥。 如上，如果显示 &#x3D;&#x3D;You’ve successfully authenticated&#x3D;&#x3D; 这就表明公钥添加成功了。 二、进入正题，没有SSH keys">
+  <meta name="description" content="注：封面背景在文章最后面。 一、首先测试下是否有原先有添加过公钥我们用下面的代码在终端去测试下： 1ssh -T git@github.com 如上，如果显示，&#x3D;&#x3D;Permission denied(publickey)&#x3D;&#x3D;  这就表示缺少公钥。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="mac下 Github添加SSH keys">
 <meta property="og:url" content="http://quanluo.github.io/2021/08/16/mac%E4%B8%8B-Github%E6%B7%BB%E5%8A%A0SSH-keys/index.html">
 <meta property="og:site_name" content="Quanluo&#39;s blog">
-<meta property="og:description" content="注：封面背景在文章最后面。 一、首先测试下是否有原先有添加过公钥我们用下面的代码在终端去测试下： 1ssh -T git@github.com 如上，如果显示，&#x3D;&#x3D;Permission denied(publickey)&#x3D;&#x3D;  这就表示缺少公钥。 如上，如果显示 &#x3D;&#x3D;You’ve successfully authenticated&#x3D;&#x3D; 这就表明公钥添加成功了。 二、进入正题，没有SSH keys">
+<meta property="og:description" content="注：封面背景在文章最后面。 一、首先测试下是否有原先有添加过公钥我们用下面的代码在终端去测试下： 1ssh -T git@github.com 如上，如果显示，&#x3D;&#x3D;Permission denied(publickey)&#x3D;&#x3D;  这就表示缺少公钥。">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/5071fdab2b8b40b59d2da538dcefca61.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/7a1f4c19940b4d20b37c35908fa8b752.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/7a1f4c19940b4d20b37c35908fa8b752.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/2d626140025744e4849ec1a16271572c.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70">
 <meta property="article:published_time" content="2021-08-16T14:17:18.000Z">
-<meta property="article:modified_time" content="2021-08-16T14:19:19.788Z">
+<meta property="article:modified_time" content="2021-08-16T14:20:55.721Z">
 <meta property="article:author" content="Quanluo">
 <meta property="article:tag" content="mac">
 <meta property="article:tag" content="github">
@@ -230,6 +230,7 @@
 <h2 id="一、首先测试下是否有原先有添加过公钥"><a href="#一、首先测试下是否有原先有添加过公钥" class="headerlink" title="一、首先测试下是否有原先有添加过公钥"></a>一、首先测试下是否有原先有添加过公钥</h2><p>我们用下面的代码在终端去测试下：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
 <p><img src="https://img-blog.csdnimg.cn/5071fdab2b8b40b59d2da538dcefca61.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>如上，如果显示，==Permission denied(publickey)==  这就表示缺少公钥。</p>
+<a id="more"></a>
 <p><img src="https://img-blog.csdnimg.cn/7a1f4c19940b4d20b37c35908fa8b752.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>如上，如果显示 ==You’ve successfully authenticated== 这就表明公钥添加成功了。</p>
 <h2 id="二、进入正题，没有SSH-keys-公钥，请看下方详细mac下-Github添加SSH-keys步骤"><a href="#二、进入正题，没有SSH-keys-公钥，请看下方详细mac下-Github添加SSH-keys步骤" class="headerlink" title="二、进入正题，没有SSH keys 公钥，请看下方详细mac下 Github添加SSH keys步骤:"></a>二、进入正题，没有SSH keys 公钥，请看下方详细<code>mac下 Github添加SSH keys</code>步骤:</h2><h3 id="1-在本地创建SSH-keys"><a href="#1-在本地创建SSH-keys" class="headerlink" title="1.在本地创建SSH keys"></a>1.在本地创建SSH keys</h3><p>打开终端，输入代码：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">"xxx@xx.com"</span></span><br><span class="line"><span class="comment">#  “”里面替换成你的GitHub账户登陆邮箱</span></span><br></pre></td></tr></table></figure>
