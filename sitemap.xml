@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://quanluo.github.io/2020/05/23/Pycharm%E8%87%AA%E5%AE%9A%E4%B9%89%E6%9B%B4%E6%8D%A2%E8%83%8C%E6%99%AF%E5%9B%BE/</loc>
+    
+    <lastmod>2021-09-07T05:47:49.537Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://quanluo.github.io/2021/03/03/mac%E4%B8%8B%E5%90%AF%E5%8A%A8jupyter-notebook/</loc>
+    
+    <lastmod>2021-09-07T05:47:38.949Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://quanluo.github.io/2021/09/07/ModuleNotFoundError-No-module-named-%E2%80%98sklearn-cross-validation%E2%80%98%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</loc>
     
     <lastmod>2021-09-07T04:18:54.948Z</lastmod>
@@ -33,13 +47,6 @@
     <loc>http://quanluo.github.io/2021/08/16/mac%E4%B8%8B-Github%E6%B7%BB%E5%8A%A0SSH-keys/</loc>
     
     <lastmod>2021-08-19T10:36:55.598Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://quanluo.github.io/2021/03/03/mac%E4%B8%8B%E5%90%AF%E5%8A%A8jupyter-notebook/</loc>
-    
-    <lastmod>2021-03-03T03:13:52.113Z</lastmod>
     
   </url>
   
@@ -404,13 +411,6 @@
     <loc>http://quanluo.github.io/2020/05/23/Python-%E7%BB%99%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%E6%98%BE%E7%A4%BA%E8%BF%9B%E5%BA%A6%E6%9D%A1%E5%92%8C%E4%B8%8B%E8%BD%BD%E6%97%B6%E9%97%B4%EF%BC%88%E4%B8%80%E7%9C%8B%E5%B0%B1%E4%BC%9A%EF%BC%81%EF%BC%89/</loc>
     
     <lastmod>2020-05-23T15:45:24.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://quanluo.github.io/2020/05/23/Pycharm%E8%87%AA%E5%AE%9A%E4%B9%89%E6%9B%B4%E6%8D%A2%E8%83%8C%E6%99%AF%E5%9B%BE/</loc>
-    
-    <lastmod>2020-05-23T15:39:12.000Z</lastmod>
     
   </url>
   

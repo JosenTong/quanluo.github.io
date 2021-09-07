@@ -125,7 +125,7 @@
     <link href="http://quanluo.github.io/2021/03/03/mac%E4%B8%8B%E5%90%AF%E5%8A%A8jupyter-notebook/"/>
     <id>http://quanluo.github.io/2021/03/03/mac%E4%B8%8B%E5%90%AF%E5%8A%A8jupyter-notebook/</id>
     <published>2021-03-03T03:12:08.000Z</published>
-    <updated>2021-03-03T03:13:52.113Z</updated>
+    <updated>2021-09-07T05:47:38.949Z</updated>
     
     <content type="html"><![CDATA[<p><img src="https://img-blog.csdnimg.cn/20210303110634532.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><a id="more"></a><h3 id="首先打开终端"><a href="#首先打开终端" class="headerlink" title="首先打开终端"></a>首先打开终端</h3><p><img src="https://img-blog.csdnimg.cn/20210303110209276.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t%60_70" alt="在这里插入图片描述"></p><h3 id="然后输入start-jupyter-notebook命令"><a href="#然后输入start-jupyter-notebook命令" class="headerlink" title="然后输入start jupyter notebook命令"></a>然后输入start jupyter notebook命令</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">python -m IPython notebook</span><br><span class="line"></span><br><span class="line"><span class="comment">### 如果是python3的环境就用下面的命令</span></span><br><span class="line">python3 -m IPython notebook</span><br></pre></td></tr></table></figure><p><img src="https://img-blog.csdnimg.cn/20210303110501413.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><h3 id="最后浏览器就会自动打开-jupyter-notebook"><a href="#最后浏览器就会自动打开-jupyter-notebook" class="headerlink" title="最后浏览器就会自动打开 jupyter notebook"></a>最后浏览器就会自动打开 jupyter notebook</h3><p><img src="https://img-blog.csdnimg.cn/20210303110634532.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>]]></content>
     
@@ -137,11 +137,7 @@
     
     
     
-      <category term="mac" scheme="http://quanluo.github.io/tags/mac/"/>
-    
-      <category term="jupyter notebook" scheme="http://quanluo.github.io/tags/jupyter-notebook/"/>
-    
-      <category term="python" scheme="http://quanluo.github.io/tags/python/"/>
+      <category term="_ Python - mac - jupyter notebook" scheme="http://quanluo.github.io/tags/Python-mac-jupyter-notebook/"/>
     
   </entry>
   

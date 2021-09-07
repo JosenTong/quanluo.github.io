@@ -104,11 +104,7 @@
       
         <tags>
             
-            <tag> mac </tag>
-            
-            <tag> jupyter notebook </tag>
-            
-            <tag> python </tag>
+            <tag> _ Python - mac - jupyter notebook </tag>
             
         </tags>
       
@@ -1130,7 +1126,7 @@
       <link href="/2020/05/23/Pycharm%E8%87%AA%E5%AE%9A%E4%B9%89%E6%9B%B4%E6%8D%A2%E8%83%8C%E6%99%AF%E5%9B%BE/"/>
       <url>/2020/05/23/Pycharm%E8%87%AA%E5%AE%9A%E4%B9%89%E6%9B%B4%E6%8D%A2%E8%83%8C%E6%99%AF%E5%9B%BE/</url>
       
-        <content type="html"><![CDATA[<p><img src="https://img-blog.csdnimg.cn/20200331115019912.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><a id="more"></a><h1 id="来给代码加个PS！"><a href="#来给代码加个PS！" class="headerlink" title="来给代码加个PS！"></a>来给代码加个PS！</h1><p>首先打开我们的Pycharm，然后通过快捷键<font color=red>Ctrl+Shift+A</font>打开搜索，然后输入<font color=red>set background image</font>，回车后就是进行背景更换了。<br>步骤如下：<br>1、会弹出个Background Imag 的窗口<br><img src="https://img-blog.csdnimg.cn/20200331114240658.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>2、再Image框里设置你想用的图片地址<br><img src="https://img-blog.csdnimg.cn/20200331114446748.png" alt="在这里插入图片描述"><br>3、下面这个Opacity这个选项是用来调整图片的透明度的，设置自己喜欢的数值就好，（注意数值越大，写代码越专注，容错率越低！！！！我不会说我说的是反话的~🤭）<br><img src="https://img-blog.csdnimg.cn/20200331114709789.png" alt="在这里插入图片描述"><br>4、其他的设置就一句个人喜好了，我这里就不详解了。<br>5、都弄完后点击<strong>OK</strong>就行了</p><p><img src="https://img-blog.csdnimg.cn/20200331114848653.png" alt="在这里插入图片描述"><br>最后你就会发现背景已经换完了，给大家看看样子<del>~</del><br><img src="https://img-blog.csdnimg.cn/20200331115019912.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><h3 id="喜欢的就快去调吧！！"><a href="#喜欢的就快去调吧！！" class="headerlink" title="喜欢的就快去调吧！！"></a><font color=red>喜欢的就快去调吧！！</font></h3>]]></content>
+        <content type="html"><![CDATA[<p><img src="https://img-blog.csdnimg.cn/20200331115019912.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><a id="more"></a><h1 id="来给代码加个PS！"><a href="#来给代码加个PS！" class="headerlink" title="来给代码加个PS！"></a>来给代码加个PS！</h1><p>首先打开我们的Pycharm，然后通过快捷键<font color=red>Ctrl+Shift+A</font>打开搜索，然后输入<font color=red>set background image</font>，回车后就是进行背景更换了。<br>步骤如下：<br>1、会弹出个Background Imag 的窗口<br><img src="https://img-blog.csdnimg.cn/20200331114240658.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>2、再Image框里设置你想用的图片地址<br><img src="https://img-blog.csdnimg.cn/20200331114446748.png" alt="在这里插入图片描述"><br>3、下面这个Opacity这个选项是用来调整图片的透明度的，设置自己喜欢的数值就好，（注意数值越大，写代码越专注，容错率越低！！！！我不会说我说的是反话的<del>🤭）<br><img src="https://img-blog.csdnimg.cn/20200331114709789.png" alt="在这里插入图片描述"><br>4、其他的设置就一句个人喜好了，我这里就不详解了。<br>5、都弄完后点击<strong>OK</strong>就行了<br><img src="https://img-blog.csdnimg.cn/20200331114848653.png" alt="在这里插入图片描述"><br>最后你就会发现背景已经换完了，给大家看看样子</del><br><img src="https://img-blog.csdnimg.cn/20200331115019912.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MzM0NzU1MA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><h3 id="喜欢的就快去调吧！！"><a href="#喜欢的就快去调吧！！" class="headerlink" title="喜欢的就快去调吧！！"></a><font color=red>喜欢的就快去调吧！！</font></h3>]]></content>
       
       
       
