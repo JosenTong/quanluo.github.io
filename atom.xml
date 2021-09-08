@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://quanluo.github.io/"/>
-  <updated>2021-09-07T04:18:54.948Z</updated>
+  <updated>2021-09-08T05:13:05.375Z</updated>
   <id>http://quanluo.github.io/</id>
   
   <author>
@@ -21,13 +21,14 @@
     <link href="http://quanluo.github.io/2021/09/07/ModuleNotFoundError-No-module-named-%E2%80%98sklearn-cross-validation%E2%80%98%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
     <id>http://quanluo.github.io/2021/09/07/ModuleNotFoundError-No-module-named-%E2%80%98sklearn-cross-validation%E2%80%98%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</id>
     <published>2021-09-07T04:15:52.000Z</published>
-    <updated>2021-09-07T04:18:54.948Z</updated>
+    <updated>2021-09-08T05:13:05.375Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="https://img-blog.csdnimg.cn/c79eab1ebf3b47b1882ab5b3f18fb6b1.jpg?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5YWoIOa0mw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"><br>在Python机器学习中，会用到使用<font color=red> <strong>scikit-learn</strong> </font>中的<font color=red><strong>train_test_split</strong></font>函数，把数据集切分为训练集和测试集。</p><a id="more"></a><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.cross_validation <span class="keyword">import</span> train_test_split</span><br></pre></td></tr></table></figure><p>用后发现会报错==ModuleNotFoundError==<br><img src="https://img-blog.csdnimg.cn/151d1d7378894840bd50590e48bfa38b.png" alt="在这里插入图片描述"></p><h3 id="问题原因："><a href="#问题原因：" class="headerlink" title="问题原因："></a>问题原因：</h3><p> <strong>这个cross_validatio这个包早就不在使用了，划分到了model_selection这个包中。</strong></p><h3 id="解决办法："><a href="#解决办法：" class="headerlink" title="解决办法："></a>解决办法：</h3><p>使用下方导入模块代码</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<p><img src="https://img-blog.csdnimg.cn/c79eab1ebf3b47b1882ab5b3f18fb6b1.jpg?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5YWoIOa0mw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p><p>在Python机器学习中，会用到使用<font color=red> <strong>scikit-learn</strong> </font>中的<font color=red><strong>train_test_split</strong></font>函数，把数据集切分为训练集和测试集。</p><a id="more"></a> <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.cross_validation <span class="keyword">import</span> train_test_split</span><br></pre></td></tr></table></figure><p>用后发现会报错==ModuleNotFoundError==<br><img src="https://img-blog.csdnimg.cn/151d1d7378894840bd50590e48bfa38b.png" alt="在这里插入图片描述"></p><h3 id="问题原因："><a href="#问题原因：" class="headerlink" title="问题原因："></a>问题原因：</h3><p> <strong>这个cross_validatio这个包早就不在使用了，划分到了model_selection这个包中。</strong></p><h3 id="解决办法："><a href="#解决办法：" class="headerlink" title="解决办法："></a>解决办法：</h3><p>使用下方导入模块代码</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.model_selection <span class="keyword">import</span> train_test_split</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/c79eab1ebf3b47b1882ab5b3f18fb6b1.jpg?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5YWoIOa0mw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center&quot; alt=&quot;在这里插入图片描述&quot;&gt;&lt;br&gt;在Python机器学习中，会用到使用&lt;font color=red&gt; &lt;strong&gt;scikit-learn&lt;/strong&gt; &lt;/font&gt;中的&lt;font color=red&gt;&lt;strong&gt;train_test_split&lt;/strong&gt;&lt;/font&gt;函数，把数据集切分为训练集和测试集。&lt;/p&gt;
+      &lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/c79eab1ebf3b47b1882ab5b3f18fb6b1.jpg?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5YWoIOa0mw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center&quot; alt=&quot;在这里插入图片描述&quot;&gt;&lt;/p&gt;
+&lt;p&gt;在Python机器学习中，会用到使用&lt;font color=red&gt; &lt;strong&gt;scikit-learn&lt;/strong&gt; &lt;/font&gt;中的&lt;font color=red&gt;&lt;strong&gt;train_test_split&lt;/strong&gt;&lt;/font&gt;函数，把数据集切分为训练集和测试集。&lt;/p&gt;
     
     </summary>
     

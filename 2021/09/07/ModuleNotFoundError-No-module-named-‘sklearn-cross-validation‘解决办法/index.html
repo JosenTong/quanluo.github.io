@@ -18,7 +18,7 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/c79eab1ebf3b47b1882ab5b3f18fb6b1.jpg?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5YWoIOa0mw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/151d1d7378894840bd50590e48bfa38b.png">
 <meta property="article:published_time" content="2021-09-07T04:15:52.000Z">
-<meta property="article:modified_time" content="2021-09-07T04:18:54.948Z">
+<meta property="article:modified_time" content="2021-09-08T05:13:05.375Z">
 <meta property="article:author" content="Quanluo">
 <meta property="article:tag" content="Python">
 <meta property="article:tag" content="sklearn">
@@ -29,7 +29,7 @@
     <link rel="alternative" href="/atom.xml" title="Quanluo&#39;s blog" type="application/atom+xml">
   
   
-    <link rel="icon" href="/img/favicon.ico">
+    <link rel="icon" href="/img/quanluo1.ico">
   
   <link rel="stylesheet" type="text/css" href="/./main.0cf68a.css">
 <link rel="stylesheet" type="text/css" href="/./search.css">
@@ -112,6 +112,8 @@
 		        
 					<a class="rss" target="_blank" href="/atom.xml" title="rss"><i class="icon-rss"></i></a>
 		        
+					<a class="qq" target="_blank" href="/2378137070" title="qq"><i class="icon-qq"></i></a>
+		        
 					<a class="bilibili" target="_blank" href="https://space.bilibili.com/215234870" title="bilibili"><i class="icon-bilibili"></i></a>
 		        
 					<a class="mail" target="_blank" href="mailto:tongjue@yahoo.com" title="mail"><i class="icon-mail"></i></a>
@@ -165,6 +167,8 @@
 						<a class="github" target="_blank" href="https://github.com/quanluo" title="github"><i class="icon-github"></i></a>
 			        
 						<a class="rss" target="_blank" href="/atom.xml" title="rss"><i class="icon-rss"></i></a>
+			        
+						<a class="qq" target="_blank" href="/2378137070" title="qq"><i class="icon-qq"></i></a>
 			        
 						<a class="bilibili" target="_blank" href="https://space.bilibili.com/215234870" title="bilibili"><i class="icon-bilibili"></i></a>
 			        
@@ -255,8 +259,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="https://img-blog.csdnimg.cn/c79eab1ebf3b47b1882ab5b3f18fb6b1.jpg?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5YWoIOa0mw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"><br>在Python机器学习中，会用到使用<font color=red> <strong>scikit-learn</strong> </font>中的<font color=red><strong>train_test_split</strong></font>函数，把数据集切分为训练集和测试集。</p>
-<a id="more"></a>
+        <p><img src="https://img-blog.csdnimg.cn/c79eab1ebf3b47b1882ab5b3f18fb6b1.jpg?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5YWoIOa0mw==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center" alt="在这里插入图片描述"></p>
+<p>在Python机器学习中，会用到使用<font color=red> <strong>scikit-learn</strong> </font>中的<font color=red><strong>train_test_split</strong></font>函数，把数据集切分为训练集和测试集。</p>
+<a id="more"></a> 
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.cross_validation <span class="keyword">import</span> train_test_split</span><br></pre></td></tr></table></figure>
 <p>用后发现会报错==ModuleNotFoundError==<br><img src="https://img-blog.csdnimg.cn/151d1d7378894840bd50590e48bfa38b.png" alt="在这里插入图片描述"></p>
 <h3 id="问题原因："><a href="#问题原因：" class="headerlink" title="问题原因："></a>问题原因：</h3><p> <strong>这个cross_validatio这个包早就不在使用了，划分到了model_selection这个包中。</strong></p>
