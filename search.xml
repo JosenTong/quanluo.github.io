@@ -4,6 +4,27 @@
   
     
     <entry>
+      <title>解决Mac安装Adobe软件的时候，总是提示安装包（软件）“可能损坏了”的问题</title>
+      <link href="/2021/09/09/%E8%A7%A3%E5%86%B3Mac%E5%AE%89%E8%A3%85Adobe%E8%BD%AF%E4%BB%B6%E7%9A%84%E6%97%B6%E5%80%99%EF%BC%8C%E6%80%BB%E6%98%AF%E6%8F%90%E7%A4%BA%E5%AE%89%E8%A3%85%E5%8C%85%EF%BC%88%E8%BD%AF%E4%BB%B6%EF%BC%89%E2%80%9C%E5%8F%AF%E8%83%BD%E6%8D%9F%E5%9D%8F%E4%BA%86%E2%80%9D%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+      <url>/2021/09/09/%E8%A7%A3%E5%86%B3Mac%E5%AE%89%E8%A3%85Adobe%E8%BD%AF%E4%BB%B6%E7%9A%84%E6%97%B6%E5%80%99%EF%BC%8C%E6%80%BB%E6%98%AF%E6%8F%90%E7%A4%BA%E5%AE%89%E8%A3%85%E5%8C%85%EF%BC%88%E8%BD%AF%E4%BB%B6%EF%BC%89%E2%80%9C%E5%8F%AF%E8%83%BD%E6%8D%9F%E5%9D%8F%E4%BA%86%E2%80%9D%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Mac电脑在安装Adobe产品软件的时候，可能会遇到这样一个问题："><a href="#Mac电脑在安装Adobe产品软件的时候，可能会遇到这样一个问题：" class="headerlink" title="Mac电脑在安装Adobe产品软件的时候，可能会遇到这样一个问题："></a>Mac电脑在安装Adobe产品软件的时候，可能会遇到这样一个问题：</h3><p><img src="https://img-blog.csdnimg.cn/9d9a48d9d237460385a9aca3de2df473.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5YWoIOa0mw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p><a id="more"></a><p>一直提示<strong>Error The installation cannot continue as the installer file may be damaged. Download the installer file again.</strong></p><p>这是怎么回事呢？<br>首先先看一下中文翻译是什么：<br>错误：</p><p><strong>安装不能继续了，因为安装包（软件）可能损坏了。请重新下载安装包。</strong></p><p>看意思是安装包损坏了，需要重新下载安装，但是，如果你去这么做了，那么你会发现还是会出现这个错误。<br>因此，报着个错误，并不一定真的是安装包损坏了，你<strong>并不需要重新下载安装包的。</strong><br><strong>那他的解决办法是什么呢？</strong><br>请看下面：<br>其实这个问题，我们在安装adobe软件的时候都会遇到。这里呢，我们就以PS为例吧。</p><h3 id="解决办法："><a href="#解决办法：" class="headerlink" title="解决办法："></a>解决办法：</h3><h4 id="1-首先，我们打开安装包："><a href="#1-首先，我们打开安装包：" class="headerlink" title="1.首先，我们打开安装包："></a>1.首先，我们打开安装包：</h4><p><img src="https://img-blog.csdnimg.cn/8c5cb608be9c453fba9f4d4b717027b5.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5YWoIOa0mw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p><h4 id="2-然后，我们找到install-app这个文件，右键-显示包内容"><a href="#2-然后，我们找到install-app这个文件，右键-显示包内容" class="headerlink" title="2.然后，我们找到install.app这个文件，右键-显示包内容"></a>2.然后，我们找到install.app这个文件，右键-显示包内容</h4><p><img src="https://img-blog.csdnimg.cn/d9cec462a69c4928863ca7789e1a0219.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5YWoIOa0mw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p><h4 id="3-点击Contants，进入文件夹里"><a href="#3-点击Contants，进入文件夹里" class="headerlink" title="3.点击Contants，进入文件夹里"></a>3.点击Contants，进入文件夹里<img src="https://img-blog.csdnimg.cn/0b9455d75feb455f8df9e5f9b4c8fbfd.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5YWoIOa0mw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></h4><h4 id="4-点击MacOS文件，进入文件夹里"><a href="#4-点击MacOS文件，进入文件夹里" class="headerlink" title="4. 点击MacOS文件，进入文件夹里"></a>4. 点击MacOS文件，进入文件夹里</h4><p><img src="https://img-blog.csdnimg.cn/20552d74e9c24e87a8ce56bde9aba192.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5YWoIOa0mw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p><h4 id="5-最后，点击Install，好了，现在可以正常安装了。"><a href="#5-最后，点击Install，好了，现在可以正常安装了。" class="headerlink" title="5.最后，点击Install，好了，现在可以正常安装了。"></a>5.最后，点击Install，好了，现在可以正常安装了。</h4><p><img src="https://img-blog.csdnimg.cn/2d2b258b515b4132ac46df19dc3efe1b.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBA5YWoIOa0mw==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="在这里插入图片描述"></p><h4 id="以上，解决问题。"><a href="#以上，解决问题。" class="headerlink" title="以上，解决问题。"></a>以上，解决问题。</h4>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> mac </tag>
+            
+            <tag> Adobe </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo+yilia+Github实现相册功能（超详细）</title>
       <link href="/2021/09/09/Hexo-yilia-Github%E5%AE%9E%E7%8E%B0%E7%9B%B8%E5%86%8C%E5%8A%9F%E8%83%BD%EF%BC%88%E8%B6%85%E8%AF%A6%E7%BB%86%EF%BC%89/"/>
       <url>/2021/09/09/Hexo-yilia-Github%E5%AE%9E%E7%8E%B0%E7%9B%B8%E5%86%8C%E5%8A%9F%E8%83%BD%EF%BC%88%E8%B6%85%E8%AF%A6%E7%BB%86%EF%BC%89/</url>
