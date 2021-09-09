@@ -111,13 +111,17 @@
       }
     };
     var render = function render(res) {
+      //https://raw.githubusercontent.com/quanluo/Blog-Picture/master/min_photos/2020-05-20_1.png
+      //https://gitee.com/quanluo/blog-picture/raw/master/min_photos/2020-05-20_1.png
       var ulTmpl = "";
       for (var j = 0, len2 = res.list.length; j < len2; j++) {
         var data = res.list[j].arr;
         var liTmpl = "";
         for (var i = 0, len = data.link.length; i < len; i++) {
-          var minSrc = 'https://raw.githubusercontent.com/quanluo/Blog-Picture/master/min_photos/' + data.link[i];
-          var src = 'https://raw.githubusercontent.com/quanluo/Blog-Picture/master/photos/' + data.link[i];
+          var minSrc = 'https://gitee.com/quanluo/blog-picture/raw/master/min_photos/' + data.link[i];
+          var src = 'https://gitee.com/quanluo/blog-picture/raw/master/photos/' + data.link[i];
+          // var minSrc = 'https://raw.githubusercontent.com/quanluo/Blog-Picture/master/min_photos/' + data.link[i];
+          // var src = 'https://raw.githubusercontent.com/quanluo/Blog-Picture/master/photos/' + data.link[i];
           var type = data.type[i];
           var target = src + (type === 'video' ? '.mp4' : '.jpg');
           src += '';
