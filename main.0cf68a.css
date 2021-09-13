@@ -2,7 +2,7 @@
 .mymenucontainer {
 	display:block;
 	cursor:pointer;
-	left:0;
+	left:260px; /* left: 0 */
 	top:0;
 	width:35px;
 	height:35px;
